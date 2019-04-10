@@ -14,7 +14,7 @@ console.log( 'LazyLoad: ', 'loading' in HTMLImageElement.prototype ? 'OK' : 'NG'
 	</script>
 </head>
 <body>
-	<div><h3>遅延読み込み：なし　最初から見える</h3><img src="./1.png"></div>
+	<div><h3>遅延読み込み：なし　最初から見える</h3><img src="./1.png" loading="eager"></div>
 	<div><h3>遅延読み込み：あり　最初から見える</h3><img src="./2.png" loading="lazy"></div>
 	<div><h3>遅延読み込み：なし　最初から見えない</h3><img src="./3.png"></div>
 	<div><h3>遅延読み込み：あり　最初から見えない</h3><img src="./4.png" loading="lazy"></div>
