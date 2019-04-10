@@ -9,7 +9,7 @@ body > div:nth-child( odd ) { background: lightgray; }
 h3 { text-align: center; }
 	</style>
 	<script>
-if ( 'loading' in HTMLImageElement.prototype ) { console.log( 'LazyLoad: OK' ); }
+console.log( 'LazyLoad: ' 'loading' in HTMLImageElement.prototype ? 'OK' : 'NG' );
 	</script>
 </head>
 <body>
