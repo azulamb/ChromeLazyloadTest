@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>Lazy test</title>
+	<style>
+html,body { padding: 0; margin: 0; height: 100%; }
+body > div { height: 50%; padding: 0.5rem; box-sizing: border-box; }
+body > div:nth-child( odd ) { background: lightgray; }
+h3 { text-align: center; }
+	</style>
+	<script>
+	</script>
+</head>
+<body>
+	<div><h3>遅延読み込み：なし　最初から見える</h3><img src="./1.png"></div>
+	<div><h3>遅延読み込み：あり　最初から見える</h3><img src="./2.png" loading="lazy"></div>
+	<div><h3>遅延読み込み：なし　最初から見えない</h3><img src="./3.png"></div>
+	<div><h3>遅延読み込み：あり　最初から見えない</h3><img src="./4.png" loading="lazy"></div>
+	<div><h3>遅延読み込み：あり　display: none</h3><img src="./5.png" loading="lazy" style="display:none;"></div>
+	<div><h3>遅延読み込み：あり　visibility: hidden</h3><img src="./6.png" loading="lazy" style="visibility:hidden;"></div>
+</body>
+</html>
